@@ -22,11 +22,12 @@
             <div class="col-lg-6 col-12 mx-auto">
 
               <div class="customized-group d-flex ai-center">
-                <a href="/" class="default-btn"> <span class="bi-arrow-left"></span>  </a>
+                <a href="/" class="default-btn"> <span class="bi-arrow-left"></span> </a>
               </div>
               <div class="customized-group">
                 <h4 class="hd-title mx-0">Login</h4>
-                <span class="d-block text-muted">Entrar com <a href="">Univ. Sílica</a> </span>
+                <span class="d-block text-muted">Entrar com <a href="" class="text-underline text-black">Univ.
+                    Sílica</a> </span>
               </div>
 
               <div class="v-separator mt-4 mb-5 mx-auto"></div>
@@ -60,7 +61,8 @@
                 </div>
               </form>
               <div class="customized-group">
-                <span class="d-block">Esqueceu a senha? <a href="/recover_pwd">recupere</a> </span>
+                <span class="d-block">Esqueceu a senha? <a href="/recover_pwd"
+                    class="text-underline text-black">recupere</a> </span>
                 <small class="text-muted">Fazendo isso você concorda com os nossos <a href="/terms">termos de uso</a> &
                   as nossas <a href="/policy">políticas de segurança</a>. </small>
               </div>
@@ -76,3 +78,14 @@
 </body>
 
 </html>
+
+<script>
+  $(document).ready(function () {
+    $('.show-pass').click(function () {
+      $(this).find('span').toggleClass('bi-eye-slash-fill bi-eye-fill');
+      $(this).prev().attr('type', function (index, oldType) {
+        return oldType === 'password' ? 'text' : 'password';
+      });
+    });
+  });
+</script>

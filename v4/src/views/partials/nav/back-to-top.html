@@ -3,13 +3,22 @@
 </div>
 
 <script>
-  let backTo = document.querySelector('.back-to');
-  window.addEventListener('scroll', function (e) {
-    (window.scrollY >= 410)
-      ? backTo.classList.add('show')
-      : backTo.classList.remove('show');
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      $(this).scrollTop() > 460
+        ? $('.back-to').addClass('active')
+        : $('.back-to').removeClass('active');
+    });
+
+    // 
+    $('.back-to').click(function () {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1000);
+    })
+
   });
-  backTo.addEventListener('click', function () {
-    // back to top
-  });
+
+
+
 </script>

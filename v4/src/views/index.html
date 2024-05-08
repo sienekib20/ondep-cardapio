@@ -5,259 +5,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
-  {{> imports}}
+  <link rel="stylesheet" href="/css/alquimist.css">
+  <link rel="stylesheet" href="/css/fonts/all.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/components/cards.css">
+  <link rel="stylesheet" href="/css/components/nav.css">
+  <link rel="stylesheet" href="/css/components/pricing.css">
+  <link rel="stylesheet" href="/css/fonts/bootstrap-icons.css">
+  <script src="/js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
 
-  <div class="wrapper">
+  <div class="wrapper-contain">
 
     {{> nav/wr-navbar}}
 
-    <header class="header-4all">
-      <div class="sliders">
-        <div class="slider-item active">
-          <div class="slider-overlay"></div>
-          <img src="/img/bg-2.jpg" alt="">
-          <div class="slider-caption">
-            <div class="container w-75">
-              <div class="row h-100">
-                <div class="col-12 d-flex flex-column jc-center h-100 text-white">
-                  <h2 class="caption-title">Encontre uma boa comida & numa <br> boa hora.</h2>
-                  <span class="caption-subtitle text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus,
-                    officiis.</span>
-                  <a href="" class="caption-subtitle btn btn-outline-orange w-20 mt-4">Pedir um prato</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!--/.slider-item-->
-        <div class="slider-item">
-          <div class="slider-overlay"></div>
-          <img src="/img/bg-3.jpg" alt="">
-          <div class="slider-caption">
-            <div class="container w-75">
-              <div class="row h-100">
-                <div class="col-12 d-flex flex-column jc-center h-100 text-white">
-                  <h2 class="caption-title">Comece o teu negócio & alimente <br> mais pessoas</h2>
-                  <span class="caption-subtitle text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus,
-                    officiis.</span>
-                  <a href="" class="caption-subtitle btn btn-outline-orange w-20 mt-4">Alojar espaço</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!--/.slider-item-->
-      </div><!--/.sliders-->
-
-
-    </header><!--/.header4all-->
-
-    <div class="section-card">
-      <div class="section-card-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h5 class="hd-title">{{Restaurantes}}</h5>
-              <span>Empreendores que já alojaram seus negócios.</span>
-            </div>
+    <div class="sliders">
+      <div class="slider-item active">
+        <div class="overlay"></div>
+        <img src="/img/bg-2.jpg" alt="">
+        <div class="slider-caption">
+          <div class="container w-90 w-md-70">
+            <span class="text-uppercase">Pareces com fome</span>
+            <h1 class="text-uppercase">Acabe logo com isso</h1>
+            <a href="" class="slider-btn">Agora</a>
           </div>
         </div>
       </div>
+
+      <div class="slider-item">
+        <div class="overlay"></div>
+        <img src="/img/bg-3.jpg" alt="">
+        <div class="slider-caption">
+          <div class="container w-90 w-md-70">
+            <span class="text-uppercase">Seja um empreendedor</span>
+            <h1 class="text-uppercase hd-title">Abre um restaurante online</h1>
+            <a href="" class="slider-btn">Agora</a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="section-card"></div>
-    <div class="section-card"></div>
-
     <div class="section-card">
-      <div class="section-card-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center">
-              <h5 class="hd-title">Comidas & bebidas</h5>
-              <span>Temos muito para oferecer.</span>
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="toolbar-slider">
-              <a href="" class="toolbar-item active">Todos</a>
-              <a href="" class="toolbar-item">Bebidas</a>
-              <a href="" class="toolbar-item">Comidas</a>
-              <a href="" class="toolbar-item">Cocktails</a>
-              <a href="" class="toolbar-item">Deserts</a>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="section-card-contain">
-        <div class="container">
+        <div class="container w-90 w-md-70">
           <div class="row">
-            <div class="col-lg-4">
-              <div class="card-item">
-                <div class="overlay"></div>
-                <img src="/img/bg-2.jpg" alt="">
-                <div class="absolute-add">
-                  <a href="" title="add carrinho"> &boxbox; </a>
-                  <a href="" title="add favorito"> &hearts; </a>
-                  <a href="" title="abrir"> &eDDot; </a>
-                </div>
-                <span class="hd-title-nb">Cocktails</span>
+            <a href="javascript:void(0)" class="restau">
+              <div class="overlay"></div>
+              <img src="/img/bebidas.jpg" alt="">
+              <div class="caption">
+                <h4 class="hd-title-nb">Drink</h4>
+                <small class="text-white">Disponível</small>
               </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card-item">
-                <div class="overlay"></div>
-                <img src="/img/bg-2.jpg" alt="">
-                <div class="absolute-add">
-                  <a href="" title="add carrinho"> &boxbox; </a>
-                  <a href="" title="add favorito"> &hearts; </a>
-                  <a href="" title="abrir"> &eDDot; </a>
-                </div>
-                <span class="hd-title-nb">Cocktails</span>
+            </a>
+            <a href="javascript:void(0)" class="restau">
+              <div class="overlay"></div>
+              <img src="/img/pratos.jpg" alt="">
+              <div class="caption">
+                <h4 class="hd-title-nb">Food</h4>
+                <small class="text-white">Disponível</small>
               </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card-item">
-                <div class="overlay"></div>
-                <img src="/img/bg-2.jpg" alt="">
-                <div class="absolute-add">
-                  <a href="" title="add carrinho"> &boxbox; </a>
-                  <a href="" title="add favorito"> &hearts; </a>
-                  <a href="" title="abrir"> &eDDot; </a>
-                </div>
-                <span class="hd-title-nb">Cocktails</span>
+            </a>
+            <a href="javascript:void(0)" class="restau">
+              <div class="overlay"></div>
+              <img src="/img/sobremesa.jpg" alt="">
+              <div class="caption">
+                <h5 class="hd-title-nb">Desert</h5>
+                <small class="text-white">Disponível</small>
               </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-lg-4">
-              <div class="card-item">
-                <div class="overlay"></div>
-                <img src="/img/bg-2.jpg" alt="">
-                <div class="absolute-add">
-                  <a href="" title="add carrinho"> &boxbox; </a>
-                  <a href="" title="add favorito"> &hearts; </a>
-                  <a href="" title="abrir"> &eDDot; </a>
-                </div>
-                <span class="hd-title-nb">Cocktails</span>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card-item">
-                <div class="overlay"></div>
-                <img src="/img/bg-2.jpg" alt="">
-                <div class="absolute-add">
-                  <a href="" title="add carrinho"> &boxbox; </a>
-                  <a href="" title="add favorito"> &hearts; </a>
-                  <a href="" title="abrir"> &eDDot; </a>
-                </div>
-                <span class="hd-title-nb">Cocktails</span>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card-item">
-                <div class="overlay"></div>
-                <img src="/img/bg-2.jpg" alt="">
-                <div class="absolute-add">
-                  <a href="" title="add carrinho"> &boxbox; </a>
-                  <a href="" title="add favorito"> &hearts; </a>
-                  <a href="" title="abrir"> &eDDot; </a>
-                </div>
-                <span class="hd-title-nb">Cocktails</span>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="section-card"></div>
-  <div class="section-card"></div>
-
-  <div class="section-card">
-    <div class="section-card-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h5 class="hd-title"></h5>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section-card-contain">
-      <div class="container">
-        <div class="pricing">
-          <div class="pricing-card text-center">
-            <span class="absolute-corner"></span>
-            <div class="pricing-card-header">
-              <h3 class="hd-title text-white">ERP</h3>
-              <span class="text-muted d-block">Plano desejado</span>
-              <small class="d-block">Redução até 10%</small>
-              <a href="" class="btn btn-block my-3 btn-outline-orange">Começar</a>
-              <span class="block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi</span>
-              <span class="h-separator"></span>
-            </div>
-            <div class="pricing-card-contain text-left d-flex flex-column">
-              <a href="" class="text-muted d-block mt-1"> &RightArrow; Direito a mais templates </a>
-              <a href="" class="text-muted d-block mt-1"> &RightArrow; Suporte técnico</a>
-              <a href="" class="text-muted d-block mt-1"> &RightArrow; Custo de dados minimizado</a>
-              <a href="" class="text-muted d-block mt-1"> &RightArrow; Certificado de segurança SSL</a>
-              <a href="" class="text-muted d-block mt-1"> &RightArrow; Restaurante no top 10</a>
-              <a href="" class="text-muted d-block mt-1"> &RightArrow; Pesquisas garantidas</a>
-              <a href="" class="text-muted d-block mt-1"> &RightArrow; Promoção de produtos</a>
-              <a href="" class="text-muted d-block mt-1"> &RightArrow; Marketing & Tráfego grátis</a>
-              <a href="" class="text-muted d-block mt-1"> &RightArrow; Bonus</a>
-            </div>
-          </div>
-          <div class="pricing-card text-center mt-4 mt-md-0">
-            <span class="absolute-corner"></span>
-            <div class="pricing-card-header">
-              <h3 class="hd-title">Ousado</h3>
-              <span class="text-muted d-block">Plano custoso</span>
-              <small>Redução até 2%</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section-card"></div>
-  <div class="section-card"></div>
-
-  <div class="section-card">
-    <div class="section-card-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h5 class="hd-title">FAQs</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section-card"></div>
-  <div class="section-card"></div>
-
-  <div class="section-card">
-    <div class="section-card-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h5 class="hd-title">Fale connosco</h5>
-            <span>Respondemos você sempre que precisares.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="section-card my-5"></div>
+    <div class="section-card my-5"></div>
+    <div class="section-card my-5"></div>
+    <div class="section-card my-5"></div>
 
 
-  {{> we-footer}}
+
+
+
+    {{> we-footer}}
 
   </div> <!--/.wrapper-->
 

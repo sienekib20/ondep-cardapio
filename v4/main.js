@@ -1,11 +1,14 @@
 const express = require('express');
-const { env } = require('./src/helpers');
+const { env, abs_path } = require('./src/helpers');
 const { init: handlebars } = require('./src/helpers/handlebars');
 
 const app = express();
 
 // views
 handlebars(app);
+
+// assets
+app.use(express.static(abs_path() + '/public'));
 
 // routes
 app.use(require('./src/routes/web'));

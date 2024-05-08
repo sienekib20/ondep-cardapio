@@ -7,6 +7,10 @@ const getdir = function (dir) {
     return path.join(root, dir);
 };
 
+const abs_path = function () {
+    return path.resolve(__dirname, '..');
+}
+
 const view_path = function () {
     return path.resolve(__dirname, '..', 'views');
 }
@@ -24,4 +28,11 @@ const env = function (key) {
     return process.env[key] ?? null;
 };
 
-module.exports = { env, getdir, view_path, layout_path, partials_path };
+module.exports = {
+    env, 
+    getdir, 
+    view_path, 
+    layout_path, 
+    partials_path,
+    abs_path
+};

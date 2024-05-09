@@ -1,0 +1,74 @@
+<div class="alq-modal">
+
+  <div class="alq-modal-contain">
+
+    <div class="col-lg-5 col-12">
+      <div class="modal-img">
+        <span class="sale">a venda</span>
+        <img src="/img/top/fast-3.png" alt="">
+      </div>
+    </div>
+
+    <div class="col-lg-7 col-12 mt-5 mt-lg-0 py-4">
+      <div class="description mt-4 mt-lg-0">
+        <div class="modal-absolute-close">
+          <span class="bi-x"></span>
+        </div>
+        <h5 class="hd-title colored mt-4" style="font-family: 'Jost-Bold';">Food Name here</h5>
+        <small class="text-black d-block">Fornecedor nomerestaurante</small>
+        <div class="ratings">
+          <small class="bi-star-fill"></small>
+          <small class="bi-star-fill"></small>
+          <small class="bi-star-fill"></small>
+          <small class="bi-star-fill"></small>
+          <small class="bi-star"></small>
+          <small class="text-muted">(4 review)</small>
+        </div>
+        <small class="d-block mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus explicabo repellendus
+          dolor placeat
+          commodi corporis minima pariatur architecto, autem numquam alias quibusdam eligendi necessitatibus
+          ipsum!</small>
+        <div class="price mt-5 d-flex ai-baseline flex-wrap">
+          <span class="line-through d-block mr-2">Kz2,500,00</span>
+          <h3 class="hd-title colored">Kz1.500,00</h3>
+        </div>
+        <small>&GreaterGreater; Uma de redução de 50%.</small>
+        <small class="d-block">&GreaterGreater; Entrega grátis!</small>
+        <div class="modal-options mt-5">
+          <div class="range">
+            <span class="range-minus">&minus;</span>
+            <span class="range-value">1</span>
+            <span class="range-plus">&plus;</span>
+          </div>
+          <a href="" class="modal-add">
+            <small class="bi-cart"></small>
+            <small>+ Ao carrinho</small>
+          </a>
+          <a href="" class="modal-def-btn"> <small class="bi-heart"></small> </a>
+          <a href="" class="modal-def-btn"> <small class="bi-share"></small> </a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('.modal-absolute-close').click(function () {
+      $('.alq-modal').removeClass('active');
+      $('body').css('overflow', 'auto');
+    });
+
+    $('.alq-modal').click(function (e) {
+      e.stopPropagation();
+      if (e.target.classList[0] === 'alq-modal') {
+        $(this).removeClass('active');
+        $('body').css('overflow', 'auto');
+      }
+    });
+  });
+</script>

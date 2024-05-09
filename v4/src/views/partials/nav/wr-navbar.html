@@ -2,6 +2,7 @@
 
 {{> utils/loader}}
 {{> utils/product-previsualizer}}
+{{> utils/cart}}
 
 <nav class="navi">
   <div class="container w-75">
@@ -41,6 +42,7 @@
       <div class="navi-item">
         <a href="/checkout" class="navi-link">
           <span class="bi-cart-fill"></span>
+          <span class="checkout_count">0</span>
         </a>
       </div>
       <div class="navi-item">
@@ -59,11 +61,28 @@
 
 
 <script>
-  function open_previsualizador() {
-    $('[name="item-preview"]').click(function (e) {
-      e.preventDefault();
-      $('body').css('overflow', 'hidden');
-      $('.alq-modal').addClass('active');
-    });
+  // 
+  function open_previsualizador(item) {
+    console.log(item.id);
+    $('body').css('overflow', 'hidden');
+    $('.alq-modal').addClass('active');
   }
+
+  // customized range
+  $(document).ready(function () {
+    (function range() {
+      var currentValue = parseInt($('.range-value').text());
+      $('.range-plus').click(function (e) {
+        currentValue += 1;
+        $('.range-value').text(currentValue.toString());
+      });
+
+      $('.range-minus').click(function (e) {
+        if (currentValue > 0) {
+          currentValue -= 1;
+          $('.range-value').text(currentValue.toString());
+        }
+      });
+    })();
+  });
 </script>

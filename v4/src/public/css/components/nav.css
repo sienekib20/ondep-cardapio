@@ -18,12 +18,17 @@
   font-family: 'Onest-Bold';
   color: #000;
   pointer-events: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .navi .container {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   height: 100%;
 }
 
@@ -31,9 +36,36 @@
 .navi-item,
 .navi-link {
   height: 100%;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.navi-link:has(.checkout_count) {
+  position: relative;
+}
+
+.checkout_count {
+  top: 20%;
+  right: -80%;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  font-size: 12px !important;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #6747C7;
+  position: absolute;
+  color: #fff;
 }
 
 .navi-item + .navi-item { margin-left: 1.5rem; }
@@ -62,15 +94,22 @@
   color: #fff;
   cursor: pointer;
   background-color: #6747C7;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   font-size: 18px;
   cursor: pointer;
   transition: 0.15s ease-in-out;
-  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
 }
 
 .back-to.active {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }

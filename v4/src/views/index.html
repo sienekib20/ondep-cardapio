@@ -102,7 +102,7 @@
                 <div class="fast-card-options">
                   <a href="" class="fast-rbtn"> <span class="bi-heart"></span> </a>
                   <a href="" class="fast-rbtn"> <span class="bi-share"></span> </a>
-                  <a href="" class="fast-rbtn" name="item-preview"> <span class="bi-eye"></span> </a>
+                  <a href="" class="fast-rbtn" name="item-preview" id="ffood-0"> <span class="bi-eye"></span> </a>
                 </div>
                 <a href="" class="fast-add">
                   <small class="bi-cart"></small>
@@ -129,7 +129,7 @@
                 <div class="fast-card-options">
                   <a href="" class="fast-rbtn"> <span class="bi-heart"></span> </a>
                   <a href="" class="fast-rbtn"> <span class="bi-share"></span> </a>
-                  <a href="" class="fast-rbtn" name="item-preview"> <span class="bi-eye"></span> </a>
+                  <a href="" class="fast-rbtn" name="item-preview" id="ffood-1"> <span class="bi-eye"></span> </a>
                 </div>
                 <a href="" class="fast-add">
                   <small class="bi-cart"></small>
@@ -156,7 +156,7 @@
                 <div class="fast-card-options">
                   <a href="" class="fast-rbtn"> <span class="bi-heart"></span> </a>
                   <a href="" class="fast-rbtn"> <span class="bi-share"></span> </a>
-                  <a href="" class="fast-rbtn" name="item-preview"> <span class="bi-eye"></span> </a>
+                  <a href="" class="fast-rbtn" name="item-preview" id="ffood-2"> <span class="bi-eye"></span> </a>
                 </div>
                 <a href="" class="fast-add">
                   <small class="bi-cart"></small>
@@ -204,6 +204,9 @@
 <script src="/js/slider.js"></script>
 <script>
   $(document).ready(function () {
-    open_previsualizador();
+    $('[name="item-preview"]').click(function (e) {
+      e.preventDefault();
+      open_previsualizador({id: $(this).attr('id')});
+    });
   });
 </script>

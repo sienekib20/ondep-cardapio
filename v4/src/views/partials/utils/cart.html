@@ -2,8 +2,8 @@
   <div class="alq-cart-contain">
     <div class="cart-top">
       <div class="title">
-        <span class="hd-title" style="margin-bottom: -5px;">carrinho</span>
-        <small class="text-muted fs-80">Estado do teu carrinho</small>
+        <h6 class="hd-title colored" style="margin-bottom: -5px;"> <span class="bi-cart-fill"></span> carrinho</h6>
+        <small class="text-black fs-80">Estado do teu carrinho</small>
       </div>
       <button type="button" class="close-cart">&times;</button>
     </div>
@@ -68,4 +68,16 @@
 </div>
 
 
-<script></script>
+<script>
+  $(document).ready(function () {
+
+    $('.alq-cart').click(function (e) {
+      if (e.target.classList[0] === 'alq-cart' || e.target.classList[0] === 'close-cart') {
+        e.preventDefault();
+        $('body').css('overflow', 'auto');
+        $('.alq-cart').removeClass('active');
+      }
+    });
+  });
+
+</script>

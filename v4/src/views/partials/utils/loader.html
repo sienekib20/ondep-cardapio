@@ -1,3 +1,13 @@
-<div class="loader hide">
+<div class="loader">
   <span class="spinner"></span>
 </div>
+
+<script>
+  $(document).ready(function() {
+    $('body').css('overflow', 'hidden');
+    setTimeout(() => {
+      $('body').css('overflow', 'auto');
+      $('.loader').addClass('hide');
+    }, 1500)
+  });
+</script>

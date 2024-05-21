@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/alquimist.css">
+  <link rel="stylesheet" href="/css/fonts/all.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/components/login.css">
+  <link rel="stylesheet" href="/css/components/cards.css">
+  <link rel="stylesheet" href="/css/components/nav.css">
+  <link rel="stylesheet" href="/css/components/pricing.css">
+  <link rel="stylesheet" href="/css/fonts/bootstrap-icons.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="">
+  <!--<link rel="shortcut icon" href="/img/favicon.png" type=""> -->
+  <script src="/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper-contain">
+
+    {{> nav/wr-navbar}}
+
+    <!--/cada restaurante tem que ter uma capa-->
+
+    <div class="navi-navigator">
+      <div class="container w-90 w-md-75 py-2">
+        <div class="row py-4">
+          <div class="col-md-10">
+            <span class="hd-title">Aspectos Visuais</span>
+          </div>
+          <div class="col-md-2 mt-2 mt-md-0 d-flex ai-center" style="font-size: 90%;">
+            <a href="/" class="d-block mr-1 colored">Home</a> / <span class="d-block ml-1">Visual</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card-contain">
+      <div class="container w-90 w-md-75">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <span class="text-black">Entenda que, poderás alterar o visual do seu negócio a qualquer momento.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-contain">
+        <div class="container w-90 w-md-75">
+          <div class="row jc-between">
+            <div class="col-lg-4">
+              <div class="tmp-card w-100">
+                <div class="tmp-card-img">
+                  <img src="/img/bg-1.jpg" alt="">
+                </div>
+                <div class="tmp-card-contain">
+                  <label for="select-1">
+                    <input type="checkbox" name="" id="select-1" class="customized-check">
+                    <small class="text-black" >Escolher Este</small>
+                  </label>
+                  <a href="/live/2" class="colored text-underline" target="_blank"> 
+                    <small class="bi-arrow-right"></small>
+                    <small>Previsualizar</small> 
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="tmp-card w-100">
+                <div class="tmp-card-img">
+                  <img src="/img/bg-1.jpg" alt="">
+                </div>
+                <div class="tmp-card-contain">
+                  <label for="select-1">
+                    <input type="checkbox" name="" id="select-1" class="customized-check">
+                    <small class="text-black" >Escolher Este</small>
+                  </label>
+                  <a href="/live/2" class="colored text-underline" target="_blank"> 
+                    <small class="bi-arrow-right"></small>
+                    <small>Previsualizar</small> 
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="tmp-card w-100">
+                <div class="tmp-card-img">
+                  <img src="/img/bg-1.jpg" alt="">
+                </div>
+                <div class="tmp-card-contain">
+                  <label for="select-1">
+                    <input type="checkbox" name="" id="select-1" class="customized-check">
+                    <small class="text-black" >Escolher Este</small>
+                  </label>
+                  <a href="/live/2" class="colored text-underline" target="_blank"> 
+                    <small class="bi-arrow-right"></small>
+                    <small>Previsualizar</small> 
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card my-4"></div>
+
+    <div class="section-card">
+      <div class="section-card-contain">
+        <div class="container w-90 w-md-75">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <a href="" class="customized-btn text-white">Seguir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card my-5"></div>
+
+
+
+
+
+    {{> we-footer}}
+
+  </div> <!--/.wrapper-->
+
+  {{> nav/back-to-top}}
+
+
+</body>
+
+</html>

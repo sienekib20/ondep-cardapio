@@ -31,5 +31,5 @@ window.onload = function() {
   plugNplay();
 
   // Define um intervalo para continuar o ciclo do slider
-  setInterval(plugNplay, 4000);
+  setInterval(plugNplay, 6000);
 };

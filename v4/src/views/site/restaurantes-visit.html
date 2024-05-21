@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/alquimist.css">
+  <link rel="stylesheet" href="/css/fonts/all.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/components/login.css">
+  <link rel="stylesheet" href="/css/components/cards.css">
+  <link rel="stylesheet" href="/css/components/nav.css">
+  <link rel="stylesheet" href="/css/components/pricing.css">
+  <link rel="stylesheet" href="/css/fonts/bootstrap-icons.css">
+  <script src="/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper-contain">
+
+    {{> nav/wr-navbar}}
+
+    <!--/cada restaurante tem que ter uma capa-->
+
+    <div class="section-card mt-4">
+      <div class="section-card-header">
+        <div class="container w-90 w-md-75">
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <a href="/restaurantes" class="default-btn mb-4"><span class="bi-arrow-left"></span></a>
+              <h4 class="hd-title">Restaurante Royal X</h4>
+              <span class="text-black">Grande Fornecedor de Fast Food</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-contain">
+        <div class="container w-90 w-md-75">
+          <div class="row">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <img src="/img/bg-1.jpg" alt="" srcset="">
+              </div>
+              <div class="col-lg-6 col-12 mt-4 mt-lg-0">
+                <span class="colored-ribon">Sobre Royal X</span>
+                <small class="text-muted d-block mt-4">Basic title</small>
+                <h4 class="hd-title mb-4">Royal X</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat esse, repellat quibusdam similique
+                  nostrum quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vero unde officia,
+                  aliquid harum molestias.</p>
+
+                <span class="hd-title text-black mt-5">Produtos vendidos </span>
+                <small class="text-black d-block mt-2">&GreaterGreater; Hamburger</small>
+                <small class="text-black d-block my-2">&GreaterGreater; Faítas</small>
+                <small class="text-black d-block my-2">&GreaterGreater; X-Burger</small>
+                <small class="text-black d-block">&GreaterGreater; Bistoque</small>
+
+                <div class="d-flex ai-baseline mt-4">
+                  <span class="hd-title mr-2">Preço oficial: 1.500,00Kz</span>
+                  <small class="line-through">2.500,00Kz</small>
+                </div>
+                <div class="d-flex ai-center mt-5 flex-wrap">
+                  <small class="text-muted w-100 w-md-50">Faça cada presente valer a pena, assim você poupa mais <span
+                      class="colored">10% de redução</span></small>
+                  <a href="" class="customized-btn text-white mt-3 mt-lg-0 w-100 w-md-50">Explorar restaurante</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card mt-5">
+      <div class="section-card-contain">
+        <div class="container w-90 w-md-75">
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <span class="hd-title">Alguns Produtos nossos.</span>
+              <small class="text-black">Talvez tenha interesses.</small>
+            </div>
+          </div>
+          <div class="row jc-between mt-4 mb-4">
+            <div class="fast-card">
+              <div class="fast-card-top">
+                <img src="/img/top/fast-3.png" alt="">
+                <div class="fast-card-options">
+                  <a href="" class="fast-rbtn"> <span class="bi-heart"></span> </a>
+                  <a href="" class="fast-rbtn"> <span class="bi-share"></span> </a>
+                  <a href="" class="fast-rbtn" name="item-preview" id="ffood-0"> <span class="bi-eye"></span> </a>
+                </div>
+                <a href="" class="fast-add">
+                  <small class="bi-cart"></small>
+                  <small>+ Ao carrinho</small>
+                </a>
+              </div>
+              <div class="fast-card-contain text-center py-3">
+                <small class="text-muted">fast food</small>
+                <div class="ratings">
+                  <small class="bi-start-fill"></small>
+                </div>
+                <span class="hd-title">Restaurante X-Fast</span>
+                <div class="d-flex ai-center jc-center"
+                  style="font-size: 82%; font-family: 'Onest-Regular' !important;">
+                  <span class="hd-title colored" style="font-family: 'Onest-Bold' !important;">Kz1.500,00</span>
+                  <small class="line-through d-block ml-2">Kz2.750,00</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="fast-card">
+              <div class="fast-card-top">
+                <img src="/img/top/fast-1.png" alt="">
+                <div class="fast-card-options">
+                  <a href="" class="fast-rbtn"> <span class="bi-heart"></span> </a>
+                  <a href="" class="fast-rbtn"> <span class="bi-share"></span> </a>
+                  <a href="" class="fast-rbtn" name="item-preview" id="ffood-1"> <span class="bi-eye"></span> </a>
+                </div>
+                <a href="" class="fast-add">
+                  <small class="bi-cart"></small>
+                  <small>+ Ao carrinho</small>
+                </a>
+              </div>
+              <div class="fast-card-contain text-center py-3">
+                <small class="text-muted">fast food</small>
+                <div class="ratings">
+                  <small class="bi-start-fill"></small>
+                </div>
+                <span class="hd-title">Restaurante X-Fast</span>
+                <div class="d-flex ai-center jc-center"
+                  style="font-size: 82%; font-family: 'Onest-Regular' !important;">
+                  <span class="hd-title colored" style="font-family: 'Onest-Bold' !important;">Kz1.500,00</span>
+                  <small class="line-through d-block ml-2">Kz2.750,00</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="fast-card">
+              <div class="fast-card-top">
+                <img src="/img/top/fast-4.png" alt="">
+                <div class="fast-card-options">
+                  <a href="" class="fast-rbtn"> <span class="bi-heart"></span> </a>
+                  <a href="" class="fast-rbtn"> <span class="bi-share"></span> </a>
+                  <a href="" class="fast-rbtn" name="item-preview" id="ffood-2"> <span class="bi-eye"></span> </a>
+                </div>
+                <a href="" class="fast-add">
+                  <small class="bi-cart"></small>
+                  <small>+ Ao carrinho</small>
+                </a>
+              </div>
+              <div class="fast-card-contain text-center py-3">
+                <small class="text-muted">fast food</small>
+                <div class="ratings">
+                  <small class="bi-start-fill"></small>
+                </div>
+                <span class="hd-title">Restaurante X-Fast</span>
+                <div class="d-flex ai-center jc-center"
+                  style="font-size: 82%; font-family: 'Onest-Regular' !important;">
+                  <span class="hd-title colored" style="font-family: 'Onest-Bold' !important;">Kz1.500,00</span>
+                  <small class="line-through d-block ml-2">Kz2.750,00</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-5">
+            <a href="" class="customized-btn text-white w-90 w-md-55 w-lg-40 mx-auto">Explorar mais produtos.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card my-5"></div>
+    <div class="section-card my-5"></div>
+
+
+
+
+
+    {{> we-footer}}
+
+  </div> <!--/.wrapper-->
+
+  {{> nav/back-to-top}}
+
+
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function () {
+    $('[name="item-preview"]').click(function (e) {
+      e.preventDefault();
+      open_previsualizador({ id: $(this).attr('id') });
+    });
+  });
+</script>

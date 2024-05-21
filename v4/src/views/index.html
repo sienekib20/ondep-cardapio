@@ -10,8 +10,11 @@
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/components/cards.css">
   <link rel="stylesheet" href="/css/components/nav.css">
+  <link rel="stylesheet" href="/css/components/plane.css">
   <link rel="stylesheet" href="/css/components/pricing.css">
   <link rel="stylesheet" href="/css/fonts/bootstrap-icons.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="">
+  <!--<link rel="shortcut icon" href="/img/favicon.png" type=""> -->
   <script src="/js/jquery-3.3.1.min.js"></script>
 </head>
 
@@ -27,9 +30,9 @@
         <img src="/img/bg-2.jpg" alt="">
         <div class="slider-caption">
           <div class="container w-90 w-md-70">
-            <span class="text-uppercase">Pareces com fome</span>
-            <h1 class="text-uppercase">Acabe logo com isso</h1>
-            <a href="" class="slider-btn">Agora</a>
+            <h1 class="hd-title">Acabe com a tua fome</h1>
+            <span class="text-white">Encomendado uma comida <br> ao teu gosto</span>
+            <a href="" class="slider-btn">Encomendar</a>
           </div>
         </div>
       </div>
@@ -39,9 +42,9 @@
         <img src="/img/bg-3.jpg" alt="">
         <div class="slider-caption">
           <div class="container w-90 w-md-70">
-            <span class="text-uppercase">Seja um empreendedor</span>
-            <h1 class="text-uppercase hd-title">Abre um restaurante online</h1>
-            <a href="" class="slider-btn">Agora</a>
+            <h1 class="hd-title">Forneça a boa Comida</h1>
+            <span class="text-white">Alimente mais pessoas <br> & Sacie a sua fome</span>
+            <a href="" class="slider-btn">Começar agora</a>
           </div>
         </div>
       </div>
@@ -87,8 +90,8 @@
         <div class="container w-90 w-md-70">
           <div class="row">
             <div class="col-md-6 col-12 text-center mx-auto">
-              <span class="text-muted">as Novidades</span>
-              <h5 class="hd-title">Mais Vendidos</h5>
+              <span class="text-muted">Tendência do Mercado</span>
+              <h4 class="hd-title">Comidas Mais Vendidos</h4>
             </div>
           </div>
         </div>
@@ -96,33 +99,6 @@
       <div class="section-card-contain">
         <div class="container w-90 w-md-70">
           <div class="row jc-between">
-            <div class="fast-card">
-              <div class="fast-card-top">
-                <img src="/img/top/fast-3.png" alt="">
-                <div class="fast-card-options">
-                  <a href="" class="fast-rbtn"> <span class="bi-heart"></span> </a>
-                  <a href="" class="fast-rbtn"> <span class="bi-share"></span> </a>
-                  <a href="" class="fast-rbtn" name="item-preview" id="ffood-0"> <span class="bi-eye"></span> </a>
-                </div>
-                <a href="" class="fast-add">
-                  <small class="bi-cart"></small>
-                  <small>+ Ao carrinho</small>
-                </a>
-              </div>
-              <div class="fast-card-contain text-center py-3">
-                <small class="text-muted">fast food</small>
-                <div class="ratings">
-                  <small class="bi-start-fill"></small>
-                </div>
-                <span class="hd-title">Restaurante X-Fast</span>
-                <div class="d-flex ai-center jc-center"
-                  style="font-size: 82%; font-family: 'Onest-Regular' !important;">
-                  <span class="hd-title colored" style="font-family: 'Onest-Bold' !important;">Kz1.500,00</span>
-                  <small class="line-through d-block ml-2">Kz2.750,00</small>
-                </div>
-              </div>
-            </div>
-
             <div class="fast-card">
               <div class="fast-card-top">
                 <img src="/img/top/fast-1.png" alt="">
@@ -136,15 +112,21 @@
                   <small>+ Ao carrinho</small>
                 </a>
               </div>
-              <div class="fast-card-contain text-center py-3">
-                <small class="text-muted">fast food</small>
+              <div class="fast-card-contain text-left py-3 px-3">
+                <small class="colored">Hamburgers</small>
                 <div class="ratings">
                   <small class="bi-start-fill"></small>
                 </div>
-                <span class="hd-title">Restaurante X-Fast</span>
-                <div class="d-flex ai-center jc-center"
-                  style="font-size: 82%; font-family: 'Onest-Regular' !important;">
-                  <span class="hd-title colored" style="font-family: 'Onest-Bold' !important;">Kz1.500,00</span>
+                <span class="hd-title-nb text-muted mb-1" style="margin-top: -3px;">Tomato Hybrid</span>
+                <div class="fast-card-ratings mb-1">
+                  <small class="bi-star-fill"></small>
+                  <small class="bi-star-fill"></small>
+                  <small class="bi-star-fill"></small>
+                  <small class="bi-star-fill"></small>
+                  <small class="bi-star"></small>
+                </div>
+                <div class="d-flex ai-center" style="font-size: 90%; font-family: 'Onest-Regular' !important;">
+                  <span class="hd-title" style="font-family: 'Onest-Bold' !important;">Kz1.500,00</span>
                   <small class="line-through d-block ml-2">Kz2.750,00</small>
                 </div>
               </div>
@@ -153,30 +135,232 @@
             <div class="fast-card">
               <div class="fast-card-top">
                 <img src="/img/top/fast-4.png" alt="">
+                <small class="fast-card-catalogue">A Venda</small>
                 <div class="fast-card-options">
                   <a href="" class="fast-rbtn"> <span class="bi-heart"></span> </a>
                   <a href="" class="fast-rbtn"> <span class="bi-share"></span> </a>
-                  <a href="" class="fast-rbtn" name="item-preview" id="ffood-2"> <span class="bi-eye"></span> </a>
+                  <a href="" class="fast-rbtn" name="item-preview" id="ffood-1"> <span class="bi-eye"></span> </a>
                 </div>
                 <a href="" class="fast-add">
                   <small class="bi-cart"></small>
                   <small>+ Ao carrinho</small>
                 </a>
               </div>
-              <div class="fast-card-contain text-center py-3">
-                <small class="text-muted">fast food</small>
+              <div class="fast-card-contain text-left py-3 px-3">
+                <small class="colored">Hamburgers</small>
                 <div class="ratings">
                   <small class="bi-start-fill"></small>
                 </div>
-                <span class="hd-title">Restaurante X-Fast</span>
-                <div class="d-flex ai-center jc-center"
-                  style="font-size: 82%; font-family: 'Onest-Regular' !important;">
-                  <span class="hd-title colored" style="font-family: 'Onest-Bold' !important;">Kz1.500,00</span>
+                <span class="hd-title-nb text-muted mb-1" style="margin-top: -3px;">Tomato Hybrid</span>
+                <div class="fast-card-ratings mb-1">
+                  <small class="bi-star-fill"></small>
+                  <small class="bi-star-fill"></small>
+                  <small class="bi-star-fill"></small>
+                  <small class="bi-star-fill"></small>
+                  <small class="bi-star"></small>
+                </div>
+                <div class="d-flex ai-center" style="font-size: 90%; font-family: 'Onest-Regular' !important;">
+                  <span class="hd-title" style="font-family: 'Onest-Bold' !important;">Kz1.500,00</span>
                   <small class="line-through d-block ml-2">Kz2.750,00</small>
                 </div>
               </div>
             </div>
 
+            <div class="fast-card">
+              <div class="fast-card-top">
+                <img src="/img/top/fast-3.png" alt="">
+                <small class="fast-card-catalogue catalogue-success">Novo</small>
+                <div class="fast-card-options">
+                  <a href="" class="fast-rbtn"> <span class="bi-heart"></span> </a>
+                  <a href="" class="fast-rbtn"> <span class="bi-share"></span> </a>
+                  <a href="" class="fast-rbtn" name="item-preview" id="ffood-1"> <span class="bi-eye"></span> </a>
+                </div>
+                <a href="" class="fast-add">
+                  <small class="bi-cart"></small>
+                  <small>+ Ao carrinho</small>
+                </a>
+              </div>
+              <div class="fast-card-contain text-left py-3 px-3">
+                <small class="colored">Hamburgers</small>
+                <div class="ratings">
+                  <small class="bi-start-fill"></small>
+                </div>
+                <span class="hd-title-nb text-muted mb-1" style="margin-top: -3px;">Tomato Hybrid</span>
+                <div class="fast-card-ratings mb-1">
+                  <small class="bi-star-fill"></small>
+                  <small class="bi-star-fill"></small>
+                  <small class="bi-star-fill"></small>
+                  <small class="bi-star-fill"></small>
+                  <small class="bi-star"></small>
+                </div>
+                <div class="d-flex ai-center" style="font-size: 90%; font-family: 'Onest-Regular' !important;">
+                  <span class="hd-title" style="font-family: 'Onest-Bold' !important;">Kz1.500,00</span>
+                  <small class="line-through d-block ml-2">Kz2.750,00</small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-header my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h4 class="hd-title">Obtenha o Máximo de Todos</h4>
+              <div class="d-flex ai-center jc-center mt-4">
+                <span class="plane-dot"></span>
+                <span class="plane-dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-card-contain">
+        <div class="container w-100 w-md-75">
+          <div class="row jc-center">
+            <div class="alq-plane">
+              <small class="plane-absolute-flag">Mais popular</small>
+              <div class="plane-header">
+                <span class="hd-title">Empresas</span>
+                <small class="text-black d-block">Nível alto & mais funcionalidades</small>
+                <div class="plane-price mt-2">
+                  <small class="text-black">Kz</small>
+                  <span class="hd-title colored">7.000,00</span>
+                  <small class="text-black">/mês</small>
+                </div>
+                <small class="hd-title my-2">+ 1 Semana de garantia</small>
+                <a href="" class="plane-choose-btn"> + Ao carrinho </a>
+              </div>
+              <div class="big-plane-contain mt-2">
+                <hr>
+                <small class="hd-title mb-2">Funcionalidades</small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span> Aumente a performance.
+                </small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span> Acesso a todas as ferramentas.
+                </small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span> Criação de 3 websites.
+                </small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span> Acesso completo aos dados.
+                </small>
+                <small class="hd-title my-2">Marketing</small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span> Divulgação de produtos.
+                </small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span> Publicidade grátis.
+                </small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span> Alcance de mais pessoas.
+                </small>
+                <small class="hd-title mt-2">E muito mais</small>
+              </div>
+            </div>
+            <div class="alq-plane ml-0 ml-md-2 mt-4 mt-lg-0">
+              <div class="plane-header">
+                <span class="hd-title">Bronze</span>
+                <small class="text-black d-block">Básico & funcções necessárias</small>
+                <div class="plane-price mt-2">
+                  <small class="text-black">Kz</small>
+                  <span class="hd-title colored">10.000,00</span>
+                  <small class="text-black">/mês</small>
+                </div>
+                <small class="hd-title my-2">+ 1 Semana de garantia</small>
+                <a href="" class="plane-choose-btn"> + Ao carrinho </a>
+              </div>
+              <div class="big-plane-contain mt-2">
+                <hr>
+                <small class="hd-title mb-2">Funcionalidades</small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span>Performance normal.
+                </small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span> Acesso as ferramentas pago.
+                </small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span> Criação de 1 website.
+                </small>
+                <small class="hd-title my-2">Marketing</small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span> Sem de produtos.
+                </small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span> Publicidade pago.
+                </small>
+                <small class="d-flex ai-center">
+                  <span class="bi-arrow-right d-block mr-2 mt-2"></span> Alcance de 5 pessoas.
+                </small>
+                <small class="hd-title mt-2">E muito mais</small>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <a href="" class="hd-title colored d-flex ai-center jc-center mt-5">termos de pagamento</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section-card">
+      <div class="section-card-header my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h4 class="hd-title">Reação dos Clientes</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-card-contain">
+        <div class="container w-90 w-md-75">
+          <div class="row">
+            <div class="col-12 col-lg-5 d-flex flex-wrap">
+              <div class="contain-img w-100 w-lg-40">
+                <img src="/img/clients/product-2.jpg" alt="">
+              </div>
+              <div class="contain-info w-100 w-lg-60">
+                <span class="hd-title">Cliente name</span>
+                <small class="text-muted">
+                  <span class="bi-clock"></span> 10 Maio 2019
+                </small>
+                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore placeat
+                  perspiciatis saepe. Cum exercitationem incidunt iste iusto nobis.</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-2"></div>
+
+            <div class="col-12 col-lg-5 d-flex flex-wrap">
+              <div class="contain-img w-100 w-lg-40">
+                <img src="/img/clients/product-4.jpg" alt="">
+              </div>
+              <div class="contain-info w-100 w-lg-60">
+                <span class="hd-title">Cliente name</span>
+                <small class="text-muted">
+                  <span class="bi-clock"></span> 10 Maio 2019
+                </small>
+                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore placeat
+                  perspiciatis saepe. Cum exercitationem incidunt iste iusto nobis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+              <div class="d-flex ai-center jc-center mt-4">
+                <span class="plane-dot"></span>
+                <span class="plane-dot"></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -206,7 +390,7 @@
   $(document).ready(function () {
     $('[name="item-preview"]').click(function (e) {
       e.preventDefault();
-      open_previsualizador({id: $(this).attr('id')});
+      open_previsualizador({ id: $(this).attr('id') });
     });
   });
 </script>

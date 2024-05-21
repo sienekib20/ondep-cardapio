@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/alquimist.css">
+  <link rel="stylesheet" href="/css/fonts/all.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/components/login.css">
+  <link rel="stylesheet" href="/css/components/cards.css">
+  <link rel="stylesheet" href="/css/components/nav.css">
+  <link rel="stylesheet" href="/css/components/pricing.css">
+  <link rel="stylesheet" href="/css/fonts/bootstrap-icons.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="">
+  <!--<link rel="shortcut icon" href="/img/favicon.png" type=""> -->
+  <script src="/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  {{> utils/product-filters}}
+
+  <div class="wrapper-contain">
+
+    {{> nav/wr-navbar}}
+
+    <div class="navi-navigator">
+      <div class="container w-90 w-md-75 py-2">
+        <div class="row py-4">
+          <div class="col-md-10">
+            <span class="hd-title">Todos os Produtos</span>
+          </div>
+          <div class="col-md-2 mt-2 mt-md-0 d-flex ai-center" style="font-size: 90%;">
+            <a href="/" class="d-block mr-1 colored">Home</a> / <span class="d-block ml-1">Produtos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-contain">
+        <div class="container w-90 w-md-75">
+          <div class="row">
+            <div class="col-lg-6 mb-3">
+              <div class="row no-spacing">
+                <div class="col-lg-6 col-md-4 mb-2 mb-md-0">
+                  <a href="" class="customized-btn text-white" name="navi-filter-toggler">
+                    <small class="bi-filter"></small>
+                    <small>Filtrar Carregamento</small>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-2 mt-4 mt-md-0">
+                  <a href="" class="customized-btn no-bg text-white" name="navi-filter-toggler">
+                    <small class="bi-filter"></small>
+                    <small>Favoritos</small>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="navi-rapid-filter">
+                {{# each categorias}}
+                <a href="/produtos/{{produto_categoria_id}}" class="navi-rapid-flink">
+                  <small class="categoria">{{categoria}}</small>
+                </a>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-contain">
+        <div class="container w-90 w-md-75">
+          <div class="row">
+            <div class="col-12 products-items jc-center">
+              {{#each productos}}
+              <div class="fast-card mx-auto mx-lg-3">
+                <div class="fast-card-top">
+                  <img src="/img/top/fast-3.png" alt="">
+                  <small class="fast-card-catalogue catalogue-success">Novo</small>
+                  <div class="fast-card-options">
+                    <a href="" class="fast-rbtn"> <span class="bi-heart"></span> </a>
+                    <a href="" class="fast-rbtn"> <span class="bi-share"></span> </a>
+                    <a href="" class="fast-rbtn" name="item-preview" id="ffood-1"> <span class="bi-eye"></span> </a>
+                  </div>
+                  <a href="" class="fast-add">
+                    <small class="bi-cart"></small>
+                    <small>+ Ao carrinho</small>
+                  </a>
+                </div>
+                <div class="fast-card-contain text-left py-3 px-3">
+                  <small class="colored">Hamburgers</small>
+                  <div class="ratings">
+                    <small class="bi-start-fill"></small>
+                  </div>
+                  <span class="hd-title-nb text-muted mb-1" style="margin-top: -3px;">Tomato Hybrid</span>
+                  <div class="fast-card-ratings mb-1">
+                    <small class="bi-star-fill"></small>
+                    <small class="bi-star-fill"></small>
+                    <small class="bi-star-fill"></small>
+                    <small class="bi-star-fill"></small>
+                    <small class="bi-star"></small>
+                  </div>
+                  <div class="d-flex ai-center" style="font-size: 90%; font-family: 'Onest-Regular' !important;">
+                    <span class="hd-title" style="font-family: 'Onest-Bold' !important;">Kz1.500,00</span>
+                    <small class="line-through d-block ml-2">Kz2.750,00</small>
+                  </div>
+                </div>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="section-card my-5"></div>
+    <div class="section-card my-5"></div>
+
+
+
+
+
+    {{> we-footer}}
+
+  </div> <!--/.wrapper-->
+
+  {{> nav/back-to-top}}
+
+
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function () {
+    $('[name="item-preview"]').click(function (e) {
+      e.preventDefault();
+      open_previsualizador({ id: $(this).attr('id') });
+    });
+
+  });
+</script>

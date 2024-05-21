@@ -1,1 +1,178 @@
-<h1>Restaurantes</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/alquimist.css">
+  <link rel="stylesheet" href="/css/fonts/all.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/components/cards.css">
+  <link rel="stylesheet" href="/css/components/nav.css">
+  <link rel="stylesheet" href="/css/components/pricing.css">
+  <link rel="stylesheet" href="/css/fonts/bootstrap-icons.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="">
+  <!--<link rel="shortcut icon" href="/img/favicon.png" type=""> -->
+  <script src="/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper-contain">
+
+    {{> nav/wr-navbar}}
+
+    <!--/cada restaurante tem que ter uma capa-->
+
+    <div class="section-card">
+      <div class="section-card-contain">
+        <div class="container w-100 w-md-75">
+          <div class="row">
+            <div class="col-12 mx-auto">
+              <form action="">
+                <div class="input-group">
+                  <span class="bi-search absolute-icon"></span>
+                  <input type="search" class="customized-input w-60 w-lg-80 pl-5" placeholder="Escreve...">
+                  <select name="" id="" class="customized-input w-40 w-lg-20 border-left-0"
+                    style="border-left-color: transparent;">
+                    <option value="">Fast food</option>
+                    <option value="">Bebidas</option>
+                    <option value="">Cocktails</option>
+                    <option value="">Sobremesas</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" style="margin-top: -3rem;">
+      <div class="section-card-contain">
+        <div class="container w-100 w-md-75">
+          <div class="row">
+            <div class="col-12 mx-auto text-center">
+              <h4 class="hd-title">Fornecedores de fast food.</h4>
+              <span class="d-block text-black">Algumas tags de pesquisas rápidas.</span>
+              <small class="text-muted">Poupe o seu tempo, veja as tags.</small>
+              <div class="related w-100">
+                <a href="" class="related-btn active">frutas</a>
+                <a href="" class="related-btn">alcólicos</a>
+                <a href="" class="related-btn">picantes</a>
+                <a href="" class="related-btn">hamburgers</a>
+                <a href="" class="related-btn">café</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section-card">
+      <div class="section-card-contain">
+        <div class="container w-100 w-md-75">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="fornecedor">
+                <a href="/restaurante/1" class="fornecedor-contain">
+                  <div class="img-overlay"></div>
+                  <img src="/img/bg-1.jpg" alt="">
+                  <div class="overlayed-caption">
+                    <span class="hd-title">Coffee</span>
+                    <small>Café das 7h</small>
+                  </div>
+                </a>
+                <a href="" class="options">
+                  <span class="bi-heart"></span>
+                </a>
+                <div class="fornecedor-options">
+                  <div class="name d-flex ai-baseline">
+                    <span class="twoletters">sm</span>
+                    <span class="hd-title-nb">Siege Midia</span>
+                  </div>
+                  <small class="d-block">Tem + 20 clientes | <small class="bi-heart-fill"></small> 50 </small>
+                  <a href="/restaurante/1" class="text-black text-underline"> <small>visitar</small> </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="fornecedor">
+                <a href="" class="fornecedor-contain">
+                  <div class="img-overlay"></div>
+                  <img src="/img/bg-3.jpg" alt="">
+                  <div class="overlayed-caption">
+                    <span class="hd-title">Coffee</span>
+                    <small>Café das 7h</small>
+                  </div>
+                </a>
+                <a href="" class="options">
+                  <span class="bi-heart"></span>
+                </a>
+                <div class="fornecedor-options">
+                  <div class="name d-flex ai-baseline">
+                    <span class="twoletters">ag</span>
+                    <span class="hd-title-nb">Aguinaldo Mav</span>
+                  </div>
+                  <small class="d-block">Tem + 20 clientes | <small class="bi-heart-fill"></small> 50 </small>
+                  <a href="" class="text-black text-underline"> <small>visitar</small> </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="fornecedor">
+                <a href="" class="fornecedor-contain">
+                  <div class="img-overlay"></div>
+                  <img src="/img/bg-2.jpg" alt="">
+                  <div class="overlayed-caption">
+                    <span class="hd-title">Coffee</span>
+                    <small>Café das 7h</small>
+                  </div>
+                </a>
+                <a href="" class="options">
+                  <span class="bi-heart"></span>
+                </a>
+                <div class="fornecedor-options">
+                  <div class="name d-flex ai-baseline">
+                    <span class="twoletters">sm</span>
+                    <span class="hd-title-nb">Siege Midia</span>
+                  </div>
+                  <small class="d-block">Tem + 20 clientes | <small class="bi-heart-fill"></small> 50 </small>
+                  <a href="" class="text-black text-underline"> <small>visitar</small> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card my-5"></div>
+    <div class="section-card my-5"></div>
+    <div class="section-card my-5"></div>
+
+
+
+
+
+    {{> we-footer}}
+
+  </div> <!--/.wrapper-->
+
+  {{> nav/back-to-top}}
+
+
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function () {
+    $('[name="item-preview"]').click(function (e) {
+      e.preventDefault();
+      open_previsualizador({ id: $(this).attr('id') });
+    });
+  });
+</script>

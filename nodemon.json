@@ -1,0 +1,8 @@
+{
+  "watch": [
+    "routes"
+  ],
+  "ignore": [
+    "node_modules"
+  ]
+}

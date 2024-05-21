@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/alquimist.css">
+  <link rel="stylesheet" href="/css/fonts/all.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/components/login.css">
+  <link rel="stylesheet" href="/css/components/cards.css">
+  <link rel="stylesheet" href="/css/components/nav.css">
+  <link rel="stylesheet" href="/css/components/pricing.css">
+  <link rel="stylesheet" href="/css/fonts/bootstrap-icons.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="">
+  <!--<link rel="shortcut icon" href="/img/favicon.png" type=""> -->
+  <script src="/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper-contain">
+    <div class="navi-responsive">
+      <div class="container">
+        <span class="sitename">Cardápio.</span>
+        <div class="items">
+          <a href="" class="item-responsive active" data-width="0"> <small class="bi-tv"></small> </a>
+          <a href="" class="item-responsive" data-width="1"> <small class="bi-tablet-landscape"></small> </a>
+          <a href="" class="item-responsive" data-width="2"> <small class="bi-phone"></small> </a>
+        </div>
+        <div class="navi-responsive-close"> &times; </div>
+      </div>
+    </div>
+
+
+    <iframe src="" frameborder="0" class="frm"></iframe>
+  </div>
+
+
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function () {
+    $('.item-responsive').click(function (e) {
+      e.preventDefault();
+      $('.item-responsive').removeClass('active');
+      $(this).addClass('active');
+
+      var largura = $(this).attr('data-width');
+      if (largura == 0) {
+        $('.frm').css('width', '100%');
+      }
+
+      if (largura == 1) {
+        $('.frm').css('width', '768px');
+      }
+
+      if (largura == 2) {
+        $('.frm').css('width', '346px');
+      }
+
+    });
+
+    //
+    $('.navi-responsive-close').click(function (e) {
+      $('.navi-responsive').addClass('closed');
+    })
+  });
+</script>

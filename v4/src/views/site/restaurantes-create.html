@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/alquimist.css">
+  <link rel="stylesheet" href="/css/fonts/all.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/components/login.css">
+  <link rel="stylesheet" href="/css/components/cards.css">
+  <link rel="stylesheet" href="/css/components/nav.css">
+  <link rel="stylesheet" href="/css/components/pricing.css">
+  <link rel="stylesheet" href="/css/fonts/bootstrap-icons.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="">
+  <!--<link rel="shortcut icon" href="/img/favicon.png" type=""> -->
+  <script src="/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper-contain">
+
+    {{> nav/wr-navbar}}
+
+    <!--/cada restaurante tem que ter uma capa-->
+
+    <div class="navi-navigator">
+      <div class="container w-90 w-md-75 py-2">
+        <div class="row py-4">
+          <div class="col-md-10">
+            <span class="hd-title">Criar negócio</span>
+          </div>
+          <div class="col-md-2 mt-2 mt-md-0 d-flex ai-center" style="font-size: 90%;">
+            <a href="/" class="d-block mr-1 colored">Home</a> / <span class="d-block ml-1">Criar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card mt-4">
+      <div class="section-card-header">
+        <div class="container w-90 w-md-75">
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <span class="hd-title d-block text-black">Tornar-se um Fornecedor, alimentar pessoas e ganhar com
+                isso.</span>
+              <small>Por favor, clique <a href="">aqui</a> Para saber mais sobre o começo de um negócio.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-contain">
+        <div class="container w-90 w-md-75">
+          <form action="" class="row" method="post">
+            <div class="col-lg-6">
+              <small class="form-label d-block mb-2 hd-title">Nome restaurante</small>
+              <div class="input-group">
+                <input type="text" class="customized-input" placeholder="Royal X">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <small class="form-label d-block mb-2 hd-title">Link externo</small>
+              <div class="input-group">
+                <input type="text" class="customized-input" placeholder="@royalX">
+              </div>
+              <a href="">
+                <small>
+                  <span class="bi-arrow-right"></span> Gerar automaticamente
+                </small>
+              </a>
+              <small class="text-black d-block" style="font-size: 80%;">Podes alterar isso a qualquer momento.</small>
+            </div>
+            <div class="col-lg-6">
+              <small class="form-label d-block mb-2 hd-title">Produtos vendidos</small>
+              <div class="input-group">
+                <select name="" id="" class="customized-input">
+                  <option value="">Fast Foot</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <small class="form-label d-block mb-2 hd-title">Adicionar</small>
+              <div class="input-group">
+                <input type="text" class="customized-input" placeholder="Menciona aqui">
+                <!--&. quando ele escrever se meter espaco, substituir por: ;, e vamos fatiar-->
+                <!--&. E tudo que for adicionado aqui, será incluso na lista-->
+              </div>
+              <small class="text-black d-block" style="font-size: 80%;">Podes adicionar que não esteja na lista. Sepera eles com ponto e virgula. <i>ex: Alimento de x; outro tipo; ...</i> </small>
+            </div>
+            <div class="col-lg-6">
+              <small class="form-label d-block mb-2 hd-title">Província</small>
+              <div class="input-group">
+                <select name="" id="" class="customized-input">
+                  <option value="">Provincias</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <small class="form-label d-block mb-2 hd-title">Bairro</small>
+              <div class="input-group">
+                <select name="" id="" class="customized-input">
+                  <option value="">Bairros Correspondentes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <small class="form-label d-block mb-2 hd-title">Horário</small>
+              <div class="input-group ai-center">
+                <input type="time" name="" id="" value="08:30" class="customized-input w-45">
+                <small class="d-block mx-3">-</small>
+                <input type="time" name="" id="" value="21:45" class="customized-input w-45">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <small class="form-label d-block mb-2 hd-title">Dias úteis</small>
+              <div class="input-group">
+                <select name="" id="" class="customized-input">
+                  <option value="">Select multiplo</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <small class="form-label d-block mb-2 hd-title">Forma de Entrega</small>
+              <div class="input-group">
+                <select name="" id="" class="customized-input">
+                  <option value="">Pagamento de taxa de entrega</option>
+                  <option value="">Entrega por nossa parte</option>
+                  <option value="">Serviço Não Disponível</option>
+                </select>
+              </div>
+              <small class="text-black d-block" style="font-size: 80%;">Defina como são feitas as entregas.</small>
+            </div>
+            <div class="col-lg-6">
+              <small class="form-label d-block mb-2 hd-title">Valor Entrega</small>
+              <div class="input-group">
+                <input type="text" class="customized-input" value="0.00 Kz" readonly>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <small class="form-label d-block mb-2 hd-title">Disponibilidade de Encomendas</small>
+              <div class="input-group">
+                <select name="" id="" class="customized-input">
+                  <option value="">Serviço Disponível</option>
+                  <option value="">Não Disponível</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <small class="form-label d-block mb-2 hd-title">Critério das Encomendas</small>
+              <div class="input-group flex-row">
+                <select name="" id="" class="customized-input w-100 w-lg-50">
+                  <option value="">30 Minutos Antes</option>
+                  <option value="">1 Minutos Antes</option>
+                  <option value="">3 Minutos Antes</option>
+                  <option value="">1 Dia Antes</option>
+                  <option value="">2 Dia Antes</option>
+                  <option value="">3 Dia Antes</option>
+                  <option value="">Prefiro Descrever</option>
+                </select>
+                <input type="text" class="customized-input w-100 w-lg-50" placeholder="Descricao">
+              </div>
+              <small class="text-black d-block" style="font-size: 80%;">Em quanto tempo os seus clientes devem fazer os
+                seus pedidos com antecedência.</small>
+            </div>
+            <div class="col-lg-6">
+              <small class="form-label d-block mb-2 hd-title">Descrever critério de Encomendas</small>
+              <div class="input-group">
+                <textarea name="" id="" cols="30" class="customized-input" placeholder="Faça a descrição..."></textarea>
+              </div>
+            </div>
+            <div class="col-lg-12 mt-5">
+              <div class="input-group w-50">
+                <a href="/visual" class="customized-btn text-white"> Seguir </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card my-5"></div>
+    <div class="section-card my-5"></div>
+    <div class="section-card my-5"></div>
+    <div class="section-card my-5"></div>
+
+
+
+
+
+    {{> we-footer}}
+
+  </div> <!--/.wrapper-->
+
+  {{> nav/back-to-top}}
+
+
+</body>
+
+</html>

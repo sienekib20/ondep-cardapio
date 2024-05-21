@@ -1,0 +1,32 @@
+<div class="products-filter d-none">
+  <div class="section-card">
+    <div class="section-card-header">
+      <div class="container w-90 w-md-75">
+        <div class="row">
+          <div class="col-12">
+            <span class="hd-title">Filtragem de Carregamento</span>
+            <small class="text-muted">Critérios de Produtos que gostarias de ver.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-card">
+    <div class="section-card-contain">
+      <div class="container w-90 w-md-75">
+        <div class="row">
+          <div class="col-lg-6">
+            <small class="form-text hd-title my-2 pl-1">Classificação</small>
+            <div class="input-group">
+              <select name="" id="" class="customized-input">
+                {{#each filters}}
+                <option value="">{{this}}</option>
+                {{/each}}
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

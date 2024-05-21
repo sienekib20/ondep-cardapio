@@ -1,0 +1,12 @@
+module.exports = {
+  up: `CREATE TABLE IF NOT EXISTS files (
+    file_id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    tipo_file_id INT(11) NOT NULL,
+    file VARCHAR(250) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY(tipo_file_id) REFERENCES tipo_files(tipo_file_id)
+  ) ENGINE=InnoDB`,
+
+  down: `DROP TABLE IF EXISTS files`
+};

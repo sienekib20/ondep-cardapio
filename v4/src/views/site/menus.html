@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/alquimist.css">
+  <link rel="stylesheet" href="/css/fonts/all.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/components/login.css">
+  <link rel="stylesheet" href="/css/components/cards.css">
+  <link rel="stylesheet" href="/css/components/nav.css">
+  <link rel="stylesheet" href="/css/components/pricing.css">
+  <link rel="stylesheet" href="/css/fonts/bootstrap-icons.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="">
+  <!--<link rel="shortcut icon" href="/img/favicon.png" type=""> -->
+  <script src="/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  {{> utils/product-filters}}
+
+  <div class="wrapper-contain">
+
+    {{> nav/wr-navbar}}
+
+    <div class="navi-navigator">
+      <div class="container w-90 w-md-75 py-2">
+        <div class="row py-4">
+          <div class="col-md-10">
+            <span class="hd-title">Menus</span>
+          </div>
+          <div class="col-md-2 mt-2 mt-md-0 d-flex ai-center" style="font-size: 90%;">
+            <a href="/" class="d-block mr-1 colored">Home</a> / <span class="d-block ml-1">Menus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-contain">
+        <div class="container w-90 w-md-75">
+          <div class="row">
+            <div class="col-12">
+              <div class="navi-rapid-filter">
+                {{# each categorias}}
+                <a href="/produtos/{{id}}" class="navi-rapid-flink">
+                  <small class="categoria">{{categoria}}</small>
+                </a>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <div class="section-card-contain">
+        <div class="container w-90 w-md-75">
+          <div class="row big-menu">
+            {{#each categorias}}
+            <div class="col-lg-6">
+              <div class="menu-item">
+                <div class="menu-item-product">
+                  <a href="" class="produto text-black">Frango assado</a>
+                  <small class="colored">2.700,00Kz</small>
+                </div>
+                <small>redução 2%: +bebidas | <a href="" class="text-underline text-black">adicionar ao carrinho</a> </small>
+                <div class="text-muted">
+                  <small>Fornecedores: </small>
+                  <a href=""> <small>@rolax &minus;</small> </a>
+                  <a href=""> <small>@caprice_tie &minus;</small> </a>
+                  <a href=""> <small>@nuances</small> </a>
+                </div>
+              </div>
+            </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="section-card my-5"></div>
+    <div class="section-card my-5"></div>
+
+
+
+
+
+    {{> we-footer}}
+
+  </div> <!--/.wrapper-->
+
+  {{> nav/back-to-top}}
+
+
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function () {
+    $('[name="item-preview"]').click(function (e) {
+      e.preventDefault();
+      open_previsualizador({ id: $(this).attr('id') });
+    });
+
+  });
+</script>
